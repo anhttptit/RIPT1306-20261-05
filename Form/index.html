@@ -1,0 +1,149 @@
+<!-- Người dùng
+Nhập/Chọn dữ liệu
+<form>
+    <label></label>
+    <input>
+</form>
+Người dùng nhấn 'Gửi'
+Trinh duyệt thu thập dữ liệu
+Gửi dữ liệu đến server
+server xử lý dữ liệu
+Lưu Database
+
+<form action="/login">
+    -lable
+    -input
+    -textarea
+    -select
+    -button
+</form>
+
+action
+method
+
+GET
+<form action="/search" method="get">
+    <input type="text" name="keyword"/>
+    <button type="submit">Tìm kiếm</button>
+</form>
+/search?keyword=''
+- Tìm kiếm
+- Lọc dữ liệu
+- Phân trang
+- Các thao tác lấy dữ liệu
+
+POST
+- Đăng ký
+- Đăng nhập
+- Tạo dữ liệu
+- Gửi thông tin
+- Upload file
+
+GET
+- dữ liệu thường được xuất hiện trên URL
+- thường được dùng lấy/tìm kiếm/lọc dữ liệu
+
+POST
+- dữ liệu nằm trong request body
+- thường được gửi/tạo dữ liệu -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- <label for="hoTen">Họ tên</label> -->
+    <!-- 1.text 2.email 3.password 4.number 5.date 6.radio 7.checkbox-->
+    <!-- <input
+      type="text"
+      id="hoTen"
+      name="hoTen"
+      placeholder="Nhập họ tên"
+      required
+      value="Nguyễn Văn A"
+      disabled
+    /> -->
+    <!-- <input type="email" id="hoTen" name="hoTen" placeholder="Nhập Email" /> -->
+    <!-- <input
+      type="password"
+      id="hoTen"
+      name="hoTen"
+      placeholder="Nhập mật khẩu"
+    /> -->
+    <!-- <input type="number" id="hoTen" name="hoTen" placeholder="Nhập số" /> -->
+    <!-- <input type="date" name="ngaySinh" /> -->
+    <!-- <input type="radio" id="male" name="gender" value="nam" />
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="nu" />
+    <label for="famale">Nữ</label> -->
+
+    <!-- <input type="checkbox" id="html" name="skills" value="html" />
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skills" value="css" />
+    <label for="html">CSS</label>
+    <input type="checkbox" id="js" name="skills" value="js" />
+    <label for="html">JS</label> -->
+
+    <!-- type = text -> Đây là ô nhập dữ liệu id -> Định danh phần tử trong html name
+    -> Tên của dữ liệu khi gửi lên cho server placeholder -> Nội dung gợi ý bên
+    trong input -->
+
+    <!-- <textarea
+      id="moTa"
+      name="moTa"
+      rows="8"
+      cols="40"
+      placeholder="Nhập mô tả"
+    ></textarea> -->
+    <!-- rows => quy định về số dòng hiển thị ban đầu cols => độ rông của textarea -->
+
+    <!-- <label for="khoaHoc">Khóa học</label>
+    <select id="khoaHoc" name="khoaHoc">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JS</option>
+    </select> -->
+
+    <!-- <button type="submit">Đăng ký</button>
+    <button type="reset">Đăng ký</button>
+    <button type="button">Đăng ký</button> -->
+    <!-- submit -> click -> Submit Form -> Browser thu thập dữ liệu -> Gửi dữ liệu theo action và method
+    reset -> Đưa các trường trong form về trạng thái ban đầu -->
+
+    <h2>Đăng ký thông tin sinh viên</h2>
+    <form action="/register" method="post">
+      <label for="fullName">Họ Tên</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Nhập họ tên"
+        required
+      />
+
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Nhập email"
+        required
+      />
+
+      <br />
+      <span>Giới tính</span>
+      <input type="radio" id="male" name="gender" value="nam" />
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" value="nu" />
+      <label for="female">Nữ</label>
+
+      <br />
+      <button type="submit">Đăng ký</button>
+      <button type="reset">Làm mới</button>
+    </form>
+  </body>
+</html>
