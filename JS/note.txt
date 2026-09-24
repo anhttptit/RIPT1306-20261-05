@@ -1,0 +1,22 @@
+Phần 4. Toán tử && Bản chất so sánh
+- Toán tử số : + - * / % **
+- Gán: += -= *= /=
+- so sánh: == === != !==
+- logic: && || !
+
+Phần 5: Cấu trúc điều kiện 
+- if else
+- toán tử ba ngôi ( ? :)
+- switch
+
+Phần 6: vòng lặp
+- for: dùng khi biết trước
+ (hoặc tính được) số lần lặp
+- while: dùng khi chỉ biết điều kiện
+dừng, không biết trước chính xác
+số lần lặp
+
+
+for (khởi tạo; điều kiện; bước nhảy)
+
+Phần 7: Hàm (function)
