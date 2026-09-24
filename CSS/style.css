@@ -1,0 +1,210 @@
+.block-demo {
+  background: #333;
+  width: 150px;
+  height: 40px;
+
+  /*Có thể chỉnh sửa chiều rông và chiều cao */
+}
+
+.inline-demo {
+  background: red;
+  width: 150px;
+  height: 40px;
+
+  /* Không thể chỉnh sửa chiều rộng và chiều cao */
+}
+
+.tag {
+  display: inline-block; /* thay vì inline mặc định của span */
+  width: 80px;
+  height: 30px;
+  background: #333;
+  color: #fff;
+  margin-left: 8px;
+}
+
+/* .item {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+} */
+
+/* Biến thể A: Mặc định flex-direction: row (trục chính ngang) */
+/* .row {
+    height: 300px;
+    background: red;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+} */
+
+/* Biến thể B: đổi flex-direction: column (trục chính dọc) */
+/* .row {
+    height: 300px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+/* Biến thể 3: dùng gap thay vì justify-content: space-between; để tạo khoảng cách giữa các item */
+.row {
+  display: flex;
+  gap: 70px;
+}
+
+.hide-none {
+  display: none;
+}
+
+.hide-visibility {
+  visibility: hidden;
+}
+
+.content-box {
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333;
+}
+
+.p1 {
+  margin-bottom: 80px;
+  background: #ddd;
+  padding: 8px;
+}
+
+.p2 {
+  margin-top: 20px;
+  background: #ddd;
+  padding: 8px;
+}
+
+.wrapper {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.centered {
+  width: 300px;
+  margin: 0 auto;
+  background: #333;
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.no-style {
+  border-color: red;
+  border-width: 5px;
+}
+
+.no-width {
+  border-style: solid;
+  border-color: red;
+}
+
+.full {
+  border: 1px solid blue;
+}
+
+.solid {
+  border: 1px solid blue;
+  margin-bottom: 10px;
+}
+.dashed {
+  border: 1px dashed blue;
+  margin-bottom: 10px;
+}
+.dotted {
+  border: 1px dotted blue;
+  margin-bottom: 10px;
+}
+.double {
+  border: 6px double #333;
+}
+
+.card {
+  border: 1px solid #333;
+  border-radius: 12px 12px 0 0;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+
+.btn:hover {
+  background: blue;
+}
+
+.btn:focus {
+  outline: 2px solid red;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  background: #0d47a1;
+}
+
+/* .list li:first-child {
+  color: green;
+  font-weight: bold;
+}
+
+.list li:last-child {
+  color: green;
+  font-weight: bold;
+} */
+
+/* .list li:nth-child(even) {
+  color: green;
+  font-weight: bold;
+} */
+
+.list li:not(:first-child):not(:last-child) {
+  color: green;
+  font-weight: bold;
+}
+
+.intro::first-letter {
+  font-size: 2.5em;
+  color: #0d47a1;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.intro::first-line {
+  font-size: 40px;
+}
+
+.external-link::after {
+  content: "?";
+  color: #999;
+}
+
+.download-link::before {
+  content: "$";
+  color: #2196f3;
+}
+
+.requied-field::after {
+  content: "*";
+  color: red;
+}

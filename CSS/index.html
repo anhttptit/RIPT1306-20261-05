@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div></div>
+    <div></div>
+    <div></div>
+
+    1. block : Phần tử chiến hết chiều ngang có thể, luôn xuống dòng 
+    2. inline: Phần tử chỉ chiếm đúng phần nội dung, nằm chung dòng 
+    3. inline-block: Nằm chung dòng như inline, nhưng set được kích thước như block 
+    4. flex: Biến thành container sắp xếp các con theo 1 hàng/ 1 cột
+    5. gird: Biến thành container sắp xếp các con theo dạng lưới hàng * cột
+    6. none: Phần tử biến mất hoàn toàn hỏi trang
+
+    vd: div, p, h1, -> block
+    span, a, strong -> inline -->
+
+    <!-- vd 1 block và inline -->
+    <!-- <div class="block-demo">Tôi là block 1</div>
+    <div class="block-demo">Tôi là block 2</div>
+    <span class="inline-demo">Tôi là inline 1</span>
+    <span class="inline-demo">Tôi là inline 2</span> -->
+
+    <!-- vd2 inline-block -->
+    <!-- <span class="tag">Tag A</span>
+    <span class="tag">Tag B</span>
+    <span class="tag">Tag C</span> -->
+
+    <!-- vd3 flex  -->
+    <!-- <div class="row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div> -->
+
+    <!-- vd 4 none -->
+    <!-- <div class="item">trước</div>
+    <div class="item hide-none">Ẩn bằng none</div>
+    <div class="item hide-visibility">Ẩn bằng visibility</div>
+    <div class="item">sau</div> -->
+
+    <!-- Box Model (width, height, padding, margin)-->
+    <!-- width/height: chiều rông/ chiều cao của phần tử
+    padding: khoảng các điệm bên trong, 
+    margin: khoảng cách bên ngoài -->
+
+    <!-- vd1 -->
+    <!-- <div class="content-box">content-box</div>
+    <div>content 2</div> -->
+
+    <!-- vd2 margin collapse -->
+    <!-- <div class="p1">Đoạn văn 1</div>
+    <div class="p2">Đoạn văn 2</div> -->
+
+    <!-- vd3 margin auto  -->
+    <!-- <div class="wrapper">
+      <div class="centered">Tôi được căn giữa</div>
+    </div> -->
+
+    <!-- Font (font-size, font-family, font-weight)
+    font-size: khích thước cỡ chữ
+    font-family: kiểu chữ
+    font-weight: độ đậm chữ (100-900) 400: normal, 700: bold -->
+
+    <!-- <p>Xin chào</p> -->
+
+    <!-- Boder & Border-radius -->
+    <!-- Boder: thuộc tính vẽ đường viền xung quanh phần tử
+    - boder-width: độ dày đường viền
+    - boder-style: kiểu đường viền (solid, dotted, dashed, double)
+    - boder-color: màu đường viền
+    Border-radius: bo tròn các góc của phần tử -->
+
+    <!-- vd1  -->
+    <!-- <div class="no-style">Chỉ có witdh + color, thiếu style</div>
+    <div class="no-width">Chỉ có style + color, thiếu width</div>
+    <div class="full">Full</div> -->
+
+    <!-- vd2  -->
+    <!-- <div class="solid">solid</div>
+    <div class="dashed">dashed</div>
+    <div class="dotted">dotted</div>
+    <div class="double">double</div> -->
+
+    <!-- vd3  -->
+    <!-- <div class="card">Card</div>
+
+    <div class="avatar">Avatar</div> -->
+
+    <!-- Pseude-class -->
+    <!-- :hover: Khi chuột đang di vào phần tử
+     :focus: Khi phần tử đang được chọn (click hoặc tab)
+     :active: Khi phần tử đang bị nhấn giữ
+     :first-child: Khi phần tử là con đầu tiên của cha
+     :last-child: Khi phần tử là con cuối cùng của cha
+     :nth-child(n): Khi phần tử ở vị trí thứ n theo công thức
+     :not(...): Khi phần tử không khớp điều hiện trong ngoặc -->
+
+    <!-- <button class="btn">Nhấn vào đây</button> -->
+
+    <!-- <ul class="list">
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+      <li>Mục 4</li>
+      <li>Mục 5</li>
+      <li>Mục 6</li>
+    </ul> -->
+
+    <!-- Pseudo-element -->
+    <!-- ::first-letter: Chọn ký tự đầu tiên trong văn bản
+     ::first-line: Chọn dòng đầu tiên của văn bản
+     ::before: Chèn nội dung ảo ngay trước nội dung thật
+     ::after: Chèn nội dung ảo ngay sau nội dung thật -->
+
+    <!-- vd1  -->
+
+    <!-- <p class="intro">
+      Bài học hôn này về CSS giúp các bạn hiểu hơn về các trình bày web một cách
+      chuyên nghiệp và có hệ thống. Bài học hôn này về CSS giúp các bạn hiểu hơn
+      về các trình bày web một cách chuyên nghiệp và có hệ thống. Bài học hôn
+      này về CSS giúp các bạn hiểu hơn về các trình bày web một cách chuyên
+      nghiệp và có hệ thống. Bài học hôn này về CSS giúp các bạn hiểu hơn về các
+      trình bày web một cách chuyên nghiệp và có hệ thống
+    </p> -->
+
+    <!-- vd2  -->
+
+    <a href="#" class="external-link">Xem tài liệu</a>
+    <a href="#" class="download-link">Tải file</a>
+    <p class="requied-field">Họ và tên</p>
+  </body>
+</html>
