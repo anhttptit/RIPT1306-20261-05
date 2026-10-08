@@ -1,0 +1,19 @@
+# Tuần 9 – Phòng thử kính
+
+Bấm vào một mẫu kính, kính được đeo lên mặt người mẫu, kèm tên, giá và mô tả. Bấm "Bỏ kính" để tháo ra.
+
+| Kiến thức | Ở đâu |
+|---|---|
+| Component dùng lại với props khác nhau | `Glasses` vừa vẽ ảnh nhỏ trong danh sách, vừa vẽ kính đeo trên mặt |
+| Render danh sách + key | `glasses.map(...)` trong `GlassesList` |
+| State | `glassId` trong `App` (`null` = chưa đeo kính) |
+| Render có điều kiện | `{glass && ...}` trong `Model`, và khối thông tin trong `App` |
+| Sự kiện, truyền hàm xuống con | `onSelect={setGlassId}` |
+| Vai trò của `key` | Kính trên mặt có `key={glass.id}`: đổi kính là React gắn phần tử mới, nên hiệu ứng đeo kính chạy lại |
+
+Nên dạy sau bài Chọn màu xe: cùng khuôn "chọn một thứ trong danh sách", nhưng thêm trạng thái "chưa chọn gì" và một component được dùng lại ở hai nơi.
+
+```bash
+npm install
+npm run dev
+```
