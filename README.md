@@ -1,0 +1,18 @@
+# Tuần 9 – Chọn màu xe
+
+Bấm vào một màu, xe đổi màu theo.
+
+| Kiến thức | Ở đâu |
+|---|---|
+| Component, props | `CarPreview` nhận `color`, `ColorPicker` nhận `colors`, `selectedId`, `onSelect` |
+| Render danh sách + key | `colors.map(...)` trong `ColorPicker` |
+| State | `colorId` trong `App` |
+| Sự kiện, truyền hàm xuống con | `onSelect={setColorId}` |
+| className có điều kiện | nút màu đang chọn có class `selected` |
+
+Xe được vẽ bằng SVG. Đổi thuộc tính `fill` của thân xe là đổi màu, không cần ảnh cho từng màu.
+
+```bash
+npm install
+npm run dev
+```
