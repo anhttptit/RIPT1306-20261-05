@@ -1,0 +1,6 @@
+Dữ liệu lấy từ [iTunes Search API](https://performance-partners.apple.com/search-api): **không cần đăng ký, không cần API key**. API giới hạn khoảng 20 request/phút; nếu bị lỗi 403 thì đợi một phút rồi tải lại.
+
+```bash
+npm install
+npm run dev
+```
